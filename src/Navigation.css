@@ -1,0 +1,13 @@
+.navbar {
+  color: black !important;
+  font-weight: 500;
+}
+
+.navbar > button {
+  color: black;
+}
+
+.navbar .chakra-button {
+  color: black;
+  background-color: #e2e8f0;
+}
