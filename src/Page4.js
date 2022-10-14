@@ -17,6 +17,7 @@ import {
 } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
 import "./Page4.css";
+import goToTop from "./utility/gototop";
 
 const Feature = ({ title, text, icon }) => {
   return (
@@ -64,7 +65,10 @@ export default function SimpleThreeColumns() {
           _hover={{
             bg: "#ffc2c4",
           }}
-          onClick={() => navigate("services")}
+          onClick={() => {
+            goToTop();
+            navigate("services");
+          }}
         >
           <Feature
             icon={<Icon as={FcDeployment} w={10} h={10} />}
@@ -87,7 +91,10 @@ export default function SimpleThreeColumns() {
           _hover={{
             bg: "#ffd9c2",
           }}
-          onClick={() => navigate("services")}
+          onClick={() => {
+            goToTop();
+            navigate("services");
+          }}
         >
           <Feature
             icon={<Icon as={FcFlowChart} w={10} h={10} />}
@@ -110,7 +117,10 @@ export default function SimpleThreeColumns() {
           _hover={{
             bg: "#ffefc2",
           }}
-          onClick={() => navigate("services")}
+          onClick={() => {
+            goToTop();
+            navigate("services");
+          }}
         >
           <Feature
             icon={<Icon as={FcSmartphoneTablet} w={10} h={10} />}
@@ -133,7 +143,10 @@ export default function SimpleThreeColumns() {
           _hover={{
             bg: "#e5f5cc",
           }}
-          onClick={() => navigate("services")}
+          onClick={() => {
+            goToTop();
+            navigate("services");
+          }}
         >
           <Feature
             icon={<Icon as={FcDataProtection} w={10} h={10} />}
@@ -156,7 +169,10 @@ export default function SimpleThreeColumns() {
           _hover={{
             bg: "#c9e6f8",
           }}
-          onClick={() => navigate("services")}
+          onClick={() => {
+            goToTop();
+            navigate("services");
+          }}
         >
           <Feature
             icon={<Icon as={FcEngineering} w={10} h={10} />}
@@ -179,7 +195,10 @@ export default function SimpleThreeColumns() {
           _hover={{
             bg: "#dfd7ea",
           }}
-          onClick={() => navigate("services")}
+          onClick={() => {
+            goToTop();
+            navigate("services");
+          }}
         >
           <Feature
             icon={<Icon as={FcSearch} w={10} h={10} />}
